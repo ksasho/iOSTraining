@@ -30,7 +30,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 
-    self.title = [NSString stringWithFormat:@"%d", self.navigationController.viewControllers.count];
+    self.title = [NSString stringWithFormat:@"%zd", self.navigationController.viewControllers.count];
 
     // TODO ここに navigation bar の右上をpushするボタンを配置するコードを書く
     // TODO さらに、一番先頭に戻るボタンを左に配置する

@@ -77,7 +77,7 @@
     ALAssetsGroup *assetsGroup = _assetsGroups[indexPath.row];
     NSString *groupName = [assetsGroup valueForProperty:ALAssetsGroupPropertyName];
     NSInteger numberOfAssets = [assetsGroup numberOfAssets];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ (%d)",  groupName, numberOfAssets];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ (%zd)",  groupName, numberOfAssets];
     [cell.imageView setImage:[UIImage imageWithCGImage:[assetsGroup posterImage]]];
     [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
     return cell;
